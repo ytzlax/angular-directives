@@ -1,2 +1,2 @@
-- regExp: ".*\\.ts+$"
+- regExp: "ANGULAR-DIRECTIVES*$"
   labels: ["typescript"]
