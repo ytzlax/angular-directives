@@ -1,6 +1,7 @@
-name: "Update Pull Request"
-on: pull_request
-
+name: "Update Title + description with Jira ticket"
+on: 
+  pull_request:
+    types: ['opened', 'edited', 'reopened', 'synchronize']
 jobs:
   update_pr:
     runs-on: ubuntu-latest
