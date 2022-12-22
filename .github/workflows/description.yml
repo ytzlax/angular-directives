@@ -1,0 +1,17 @@
+
+# Workflow to associate labels automatically
+name: Append Github PR description
+# Trigger the workflow on pull request events
+on: [pull_request]
+jobs:
+  label:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Add deploy URL to PR description
+        uses: chabroA/action-append-pr-description@master
+        with:
+          auth: ${{ secrets.GITHUB_TOKEN }}
+          repo: ${{ github.event.repository.name }}
+          owner: ${{ github.repository_owner }}
+          pr: ${{ github.event.number }}
+          url: "https://my-url.test"
