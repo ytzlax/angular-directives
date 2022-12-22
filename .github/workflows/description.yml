@@ -11,7 +11,7 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           jira-token: ${{ secrets.JIRA_TOKEN }}
-          jira-base-url: https://your-domain.atlassian.net
+          jira-base-url: https://ericom.atlassian.net
           skip-branches: '^(production-release|main|master|release\/v\d+)$' #optional 
           custom-issue-number-regexp: '^\d+' #optional
           jira-project-key: 'PRJ' #optional    
