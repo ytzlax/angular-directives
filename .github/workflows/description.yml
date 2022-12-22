@@ -8,7 +8,7 @@ jobs:
     - uses: tzkhan/pr-update-action@v2
       with:
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
-        head-branch-regex: '^SHIELD-(?<ticketNumber>\d+)'       
+        head-branch-regex: '^SHIELD-*)'       
         title-template: '[%headbranch%] '
         body-template: |
           https://ericom.atlassian.net/browse/%headbranch%
