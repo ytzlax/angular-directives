@@ -5,7 +5,7 @@ jobs:
   update_pr:
     runs-on: ubuntu-latest
     steps:
-    - uses: ../.github/actions/pr-update-action
+    - uses: ./.github/actions/pr-update-action
       with:
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
         head-branch-regex: 'SHIELD-\d+$'
