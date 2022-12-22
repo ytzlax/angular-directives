@@ -5,6 +5,8 @@ jobs:
   update_pr:
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@v3
+      name: Checkout
     - uses: ./.github/actions/pr-update-action
       with:
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
