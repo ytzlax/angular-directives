@@ -10,7 +10,7 @@ jobs:
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
         head-branch-regex: 'SHIELD-\d+'
         lowercase-branch: false  
-        title-template: '[%headbranch%] '
+        title-template: '%headbranch% '
         body-template: |
           https://ericom.atlassian.net/browse/%headbranch%
         body-update-action: 'suffix'
